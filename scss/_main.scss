@@ -1,0 +1,801 @@
+a{
+    display: block;
+    text-decoration: none;
+}
+
+.btn{
+    padding: 12px 32px;
+    color: $white !important;
+}
+
+.fa-solid{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-style: normal;
+}
+
+#myBtn {
+    position: fixed;
+    right: 16px;
+    bottom: 20px;
+    width: 50px;
+    height: 50px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-image: url(../images/goToTop.svg);
+    background-position: center center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+header{
+    border-bottom: 2px solid #FFD153;
+    background-color: $white;
+    .container{
+        padding: 16px 20px;
+    }
+    h1{
+        height: 24px;
+        .logo{
+            width: auto;
+            height: 100%;
+            img{
+                height: 100%;
+                vertical-align: top;
+            }
+        }
+    }
+    .btn{
+        padding: 8px 32px;
+    }
+}
+
+main{
+    .areaTitle{
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .area_intro{
+        padding-top: 32px;
+        padding-bottom: 90px;
+        img{
+            max-width: 532px;
+            width: 100%;
+            height: auto;
+        }
+        .area_intro_textBox{
+            h3{
+                color: $primary;
+                font-size: 16px;
+                line-height: 24px;
+                margin-bottom: 8px;
+            }
+            h2{
+                font-size: 32px;
+                line-height: 46px;
+                margin-bottom: 16px;
+            }
+        }
+        .area_intro_imgBox{
+            background-image: url(../images/path157.svg);
+            background-position: center 80px;
+            background-size: 95%;
+            background-repeat: no-repeat;
+            img{
+                padding-bottom: 10px;
+            }
+        }
+    }
+    .area_platform{
+        background-image: url(../images/Ellipse3.svg);
+        background-position: -85px 15px;
+        background-size: 126px;
+        background-repeat: no-repeat;
+        padding-bottom: 60px;
+        ul{
+            padding-top: 32px;
+            li:not(:last-of-type){
+                margin-bottom: 24px;
+            }
+        }
+        img{
+            max-width: 60px;
+            margin-bottom: 16px;
+        }
+        h3{
+            font-size: 18px;
+            line-height: 26px;
+            margin-bottom: 16px;
+        }
+        p{
+            color: #747474;
+        }
+    }
+    .area_role{
+        background-image: url(../images/Ellipse18.svg);
+        background-position: right 1660px;
+        background-size: 135px;
+        background-repeat: no-repeat;
+        padding-bottom: 60px;
+        .areaSubTitle{
+            font-size: 18px;
+            line-height: 26px;
+            padding: 16px 0px 32px;
+            text-align: center;
+        }
+        .roleBox{
+            li:not(:last-of-type){
+                margin-bottom: 24px;
+            }
+            .roleItem{
+                box-shadow: 0px 2px 10px #00000014;
+                background-color: $white;
+                -moz-border-radius: 12px;
+                -ms-border-radius: 12px;
+                -o-border-radius: 12px;
+                -webkit-border-radius: 12px;
+                border-radius: 12px;
+                max-width: 260px;
+                // max-width: 480px;
+                margin: 0 auto;
+                overflow: hidden;
+            }
+        }
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+        .roleInfo{
+            text-align: center;
+            padding: 16px 16px 24px;
+            h3{
+                color: $primary;
+                font-size: 16px;
+                line-height: 24px;
+                padding-bottom: 16px;
+            }
+            p{
+                min-height: 48px;
+            }
+        }
+    }
+    .area_advantage{
+        padding-bottom: 60px;
+        .area_advantageInner{
+            > .row{
+                -ms-flex-direction: column-reverse;
+                -moz-flex-direction: column-reverse;
+                -webkit-flex-direction: column-reverse;
+                flex-direction: column-reverse;
+            }
+        }
+        .serviceBox{
+            li{
+                &:not(:last-of-type){
+                    margin-bottom: 24px;
+                }
+            }
+        }
+        .serviceItem{
+            max-width: 230px;
+            margin-left: auto;
+            margin-right: auto;
+            box-shadow: 0px 2px 10px #00000014;
+            -moz-border-radius: 12px;
+            -ms-border-radius: 12px;
+            -o-border-radius: 12px;
+            -webkit-border-radius: 12px;
+            border-radius: 12px;
+            padding: 32px 24px 48px;
+            .service_icon{
+                margin-bottom: 24px;
+                box-shadow: 0px 2px 10px #00000014;
+                width: 86px;
+                height: 86px;
+            }
+            h3{
+                margin-bottom: 16px;
+                font-size: 18px;
+                line-height: 26px;
+            }
+            p{
+                margin-bottom: 0;
+            }
+        }
+        .area_advantage_textBoxInner{
+            text-align: center;
+            padding-bottom: 32px;
+        }
+        .area_advantage_textBox{
+            h2{
+                font-size: 28px;
+                line-height: 40px;
+                margin-bottom: 16px;
+            }
+            p{
+                font-size: 18px;
+                line-height: 26px;
+                margin-bottom: 24px;
+            }
+        }
+    }
+    .area_review{
+        padding-bottom: 60px;
+        background-image: url(../images/Ellipse19.svg);
+        background-position: -20px 50px;
+        background-size: 153px;
+        background-repeat: no-repeat;
+        .owl-carousel{
+            padding-top: 32px;
+        }
+    }
+    .area_pricing_intro{
+        background-image: url(../images/pricing_bg1_mob.svg);
+        background-position: left top;
+        background-size: 100%;
+        background-repeat: no-repeat;
+        padding: 48px 0 500px 0;
+        &:after{
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 100%;
+            height: 610px;
+            border-radius: 0px 0px 0px 150px;
+            background-color: #F7F9FD;
+            z-index: -1;
+        }
+        h2{
+            font-size: 32px;
+            line-height: 46px;
+            margin-bottom: 16px;
+        }
+        p{
+            margin-bottom: 0;
+        }
+    }
+    .area_pricing_program{
+        background-image: url(../images/pricing_bg2.svg);
+        background-position: -150px 750px;
+        background-size: 220px;
+        background-repeat: no-repeat;
+        padding-bottom: 60px;
+        .nav{
+            padding: 48px 0;
+            -ms-flex-pack: flex-start;
+            -webkit-justify-content: flex-start;
+            -webkit-box-pack: flex-start;
+            -moz-box-pack: flex-start;
+            justify-content: flex-start;
+
+            overflow-y: scroll;
+            padding: 24px 10px 32px;
+            &::-webkit-scrollbar {
+                display: none;
+            }
+            .nav-item{
+                &:not(:last-of-type){
+                    margin-right: 6px;
+                }
+            }
+            .nav-link{
+                padding: 8px 16px;
+                white-space: nowrap;
+                -moz-border-radius: 65px;
+                -ms-border-radius: 65px;
+                -o-border-radius: 65px;
+                -webkit-border-radius: 65px;
+                border-radius: 65px;
+                border:1px solid $primary;
+                background-color: $white;
+                &.active{
+                    background-color: $primary;
+                }
+            }
+        }
+        .programBox{
+            .programItem{
+                max-width: 500px;
+                margin: 0 auto 24px;
+                background-color: $white;
+                text-align: center;
+                box-shadow: 0px 2px 10px #00000014;
+                -moz-border-radius: 12px;
+                -ms-border-radius: 12px;
+                -o-border-radius: 12px;
+                -webkit-border-radius: 12px;
+                border-radius: 12px;
+            }
+            > div:last-of-type{
+                .programItem{
+                    margin-bottom: 0;
+                }
+            }
+        }
+        .programTitle{
+            padding: 16px 0;
+            font-size: 24px;
+            line-height: 35px;
+            border-bottom: 1px solid #DDDDDD;
+        }
+        .programBottom{
+            padding:32px 25px 38px;
+            > p{
+                padding-bottom: 32px;
+                text-align: center;
+            }
+            .programDetail{
+                padding-bottom: 32px;
+                font-size: 29px;
+                line-height: 42px;
+                .subScribeBox{
+                    background-color: #F5F5F5;
+                    -moz-border-radius: 12px;
+                    -ms-border-radius: 12px;
+                    -o-border-radius: 12px;
+                    -webkit-border-radius: 12px;
+                    border-radius: 12px;
+                    padding: 24px 0;
+                    > span{
+                        font-size: 12px;
+                        line-height: 17px;
+                        padding-bottom: 8px;
+                        -webkit-box-flex: 100%;
+                        -moz-box-flex: 100%;
+                        -webkit-flex: 100%;
+                        -ms-flex: 100%;
+                        flex: 100%;
+                    }
+                    .programNum{
+                        &.programNumPeople{
+                            color: $primary;
+                        }
+                        p{
+                            font-size: 32px;
+                            line-height: 35px;
+                            padding-right: 8px;
+                        }
+                        .unit{
+                            font-size: 12px;
+                            line-height: 17px;
+                        }
+                    }
+                }
+            }
+            .programList{
+                line-height: 20px;
+                font-size: 14px;
+                padding: 0 0 32px 5px;
+                text-align: left;
+
+                li{
+                    padding-left: 24px;
+                    margin-bottom: 16px;
+                    background-image: url(../images/checkmark-outline.svg);
+                    background-position: center left;
+                    background-size: 16px;
+                    background-repeat: no-repeat;
+                    &:last-of-type{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+            .btn{
+                font-size: 18px;
+                line-height: 26px;
+            }
+        }
+        .programDetail{
+            .col-1{
+                padding: 0;
+            }
+        }
+    }
+    .area_pricing_faq{
+        padding-bottom: 60px;
+        .accordion{
+            padding-top: 32px;
+            .accordion-item{
+                box-shadow: 0px 2px 10px #00000014;
+                border: 0;
+                -moz-border-radius: 12px;
+                -ms-border-radius: 12px;
+                -o-border-radius: 12px;
+                -webkit-border-radius: 12px;
+                border-radius: 12px;
+                &:not(:last-of-type){
+                    margin-bottom: 16px;
+                }
+            }
+        }
+        .accordion-button{
+            &:after{
+                background-image: url(../images/accordion_toggle.svg);
+                background-size: 20px;
+                background-position: center top;
+            }
+            &:not(.collapsed):after{
+                background-position: center bottom;
+            }
+            &:focus{
+                box-shadow: none;
+            }
+            &:not(.collapsed){
+                background-color: transparent;
+                font-weight: bold;
+                box-shadow: none;
+            }
+        }
+        .accordion-body{
+            color: #747474;
+            line-height: 32px;
+            padding: 8px 20px 16px;
+        }
+    }
+    .reviewItem{
+        max-width: 352px;
+        margin: 0 auto;
+        .reviewPerson{
+            position: absolute;
+            top: -65px;
+            left: 0;
+            img{
+                max-width: 110px;
+                width: 100%;
+                height: auto;
+            }
+        }
+        .reviewInfo{
+            margin: 53px 0 0;
+            padding: 48px 28px 24px;
+            box-shadow: 0px 2px 10px #00000014;
+            background-color: $white;
+            -moz-border-radius: 12px;
+            -ms-border-radius: 12px;
+            -o-border-radius: 12px;
+            -webkit-border-radius: 12px;
+            border-radius: 12px;
+            p{
+                margin-bottom: 16px;
+                padding-bottom: 16px;
+                border-bottom: 1px solid #ddd;
+            }
+            span{
+                margin-bottom: 8px;
+            }
+            ul{
+                .reviewStar{
+                    i:before{
+                        color: #F5CA52;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.owl-carousel{
+    .owl-dots{
+        text-align: center;
+        .owl-dot{
+            width: 10px;
+            height: 10px;
+            -moz-border-radius: 50px;
+            -ms-border-radius: 50px;
+            -o-border-radius: 50px;
+            -webkit-border-radius: 50px;
+            border-radius: 50px;
+            background-color: #DDDDDD;
+            opacity: 1;
+            border-top: 0;
+            border-bottom: 0;
+            transition: all .3s;
+            margin: 0 4px;
+            &.active{
+                background-color: #FFD153;
+                width: 16px;
+            }
+        }
+    }
+}
+
+footer{
+    background-image: url(../images/footer_bg_mob.svg);
+    background-position: top center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    .container{
+        padding: 75% 0 60px;
+        text-align: center;
+        p{
+            font-size: 24px;
+            margin-bottom: 24px;
+        }
+    }
+    .copyright{
+        background-color: #F5F5F5;
+        padding: 16px 0;
+    }
+}
+
+@media screen and (min-width: 576px) {
+    #myBtn {
+        bottom: 250px;
+        right: 48px;
+        width: 71px;
+        height: 71px;
+    }
+    main{
+        .area_pricing_intro{
+            padding-top: 250px;
+            padding-bottom: 100px;
+            background-image: url(../images/pricing_bg1.svg);
+            background-position: right top;
+            background-size: contain;
+            &:after{
+                height: 470px;
+            }
+        }
+        .area_pricing_program {
+            .nav{
+                overflow-y: hidden;
+                -ms-flex-pack: center;
+                -webkit-justify-content: center;
+                -webkit-box-pack: center;
+                -moz-box-pack: center;
+                justify-content: center;
+                &::-webkit-scrollbar {
+                    display: block;
+                }
+            }
+        }
+    }
+    footer{ 
+        .container{
+            padding-top: 65%;
+        }
+    }
+}
+@media screen and (min-width: 768px) {
+    // &#index{
+    //     .pageContent{
+    //         background-image: url(../images/Ellipse3.svg), url(../images/Ellipse18.svg), url(../images/Ellipse19.svg);
+    //         background-position: -180px 589px, 110% 1694px, 70px 2610px;
+    //         background-size: 360px, 310px, 150px;
+    //     }
+    // }
+    header{
+        border-bottom: 0;
+        background-color: transparent;
+        width: 100%;
+        position: absolute;
+        .container{
+            padding: 24px 0;
+        }
+        h1{
+            height: 40px;
+        }
+    }
+    main{
+        .area_intro{
+            background-image: url(../images/bg_yellow.svg);
+            background-position: right top;
+            background-size: 850px;
+            background-repeat: no-repeat;
+            max-width: 100%;
+            margin-bottom: 0;
+            padding-top: 118px;
+            padding-bottom: 110px;
+            text-align: center;
+            .area_intro_textBox{
+                h3{
+                    font-size: 18px;
+                    line-height: 26px;
+                    margin-bottom: 8px;
+                }
+                h2{
+                    font-size: 48px;
+                    line-height: 70px;
+                }
+                p{
+                    font-size: 20px;
+                    line-height: 29px;
+                }
+            }
+            .area_intro_imgBox{
+                background-image: none;
+            }
+        }
+        .areaTitle{
+            font-size: 32px;
+            line-height: 46px;
+        }
+        .area_platform{
+            background-image: url(../images/Ellipse3.svg);
+            background-position: -180px 0;
+            background-size: 360px;
+            padding-top: 95px;
+            padding-bottom: 100px;
+            ul{
+                li:not(:last-of-type){
+                    margin-bottom: 0;
+                }
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+        .area_role{
+            .areaSubTitle{
+                font-size: 20px;
+                line-height: 29px;
+                padding-bottom: 48px;
+            }
+        }
+        .area_pricing_intro{
+            padding-top: 350px;
+            padding-bottom: 150px;
+            background-size: 885px;
+            h2{
+                font-size: 48px;
+                line-height: 70px;
+            }
+        }
+        .area_pricing_program {
+            background-position: -250px 250px;
+            background-size: 361px;
+            padding-bottom: 100px;
+            .nav{
+                .nav-item{
+                    .nav-link{
+                        line-height: 26px;
+                        font-size: 18px;
+                        padding: 12px 32px;
+                    }
+                }
+            }
+        }
+        .area_pricing_faq{
+            .accordion{
+                padding-top: 48px;
+            }
+        }
+    }
+    footer{ 
+        .container{
+            p{
+                font-size: 32px;
+                line-height: 46px;
+                margin-bottom: 48px;
+            }
+        }
+    }
+}
+@media screen and (min-width: 992px) {
+    main{
+        .area_platform{
+            ul{
+                padding-top: 48px;
+            }
+            img{
+                max-width: 90px;
+                margin-bottom: 24px;
+            }
+            p{
+                font-size: 16px;
+            }
+            h3{
+                font-size: 24px;
+                line-height: 35px;
+                margin-bottom: 24px;
+            }
+        }
+        .area_pricing_intro{
+            padding-top: 180px;
+            padding-bottom: 280px;
+        }
+        .area_pricing_program{
+            .nav{
+                .nav-item{
+                    &:not(:last-of-type){
+                        margin-right: 16px;
+                    }
+                    .nav-link{
+                        line-height: 26px;
+                        font-size: 18px;
+                        padding: 12px 32px;
+                    }
+                }
+            }
+            .programBox{
+                .programItem{
+                    margin-bottom: 0;
+                    .programBottom{
+                        .programList {
+                            line-height: 24px;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    footer{ 
+        background-image: url(../images/footer_bg.svg);
+        .container{
+            padding: 25% 0 100px;
+        }
+    }
+}
+@media screen and (min-width: 1200px) {
+    main{
+        .area_intro{
+            text-align: left;
+        }
+        .area_role{
+            background-position: 1350px 315px;
+            background-size: 310px;
+            padding-bottom: 100px;
+            .roleBox{
+                li{
+                    margin-bottom: 0;
+                }
+                .roleItem{
+                    max-width: 100%;
+                }
+            }
+            
+        }
+        .area_advantage{
+            padding-bottom: 100px;
+            .area_advantageInner{
+                > .row{
+                    -ms-flex-direction: row;
+                    -moz-flex-direction: row;
+                    -webkit-flex-direction: row;
+                    flex-direction: row;
+                }
+            }
+            .area_advantage_textBoxInner{
+                text-align: left;
+            }
+            .serviceBox{
+                li:nth-child(3){
+                    margin-bottom: 0;
+                }
+            }
+            .serviceItem{
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+        .area_review{
+            .owl-carousel{
+                padding-top: 48px;
+            }
+        }
+        .reviewItem{
+            .reviewInfo{    
+                p{
+                    margin-bottom: 24px;
+                    padding-bottom: 24px;
+                }
+            }
+        }
+        .area_pricing_faq{
+            .accordion-button{
+                font-size: 18px;
+                line-height: 28px;
+            }
+        }
+    }
+    footer{ 
+        .container{
+            padding-top: 20%;
+        }
+    }
+}
