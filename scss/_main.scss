@@ -54,7 +54,7 @@ header{
 }
 
 main{
-    .areaTitle{
+    .MainTitle{
         font-size: 28px;
         line-height: 40px;
     }
@@ -120,7 +120,7 @@ main{
         background-size: 135px;
         background-repeat: no-repeat;
         padding-bottom: 60px;
-        .areaSubTitle{
+        .SubTitle{
             font-size: 18px;
             line-height: 26px;
             padding: 16px 0px 32px;
@@ -610,7 +610,7 @@ footer{
                 background-image: none;
             }
         }
-        .areaTitle{
+        .MainTitle{
             font-size: 32px;
             line-height: 46px;
         }
@@ -630,7 +630,7 @@ footer{
             }
         }
         .roleList{
-            .areaSubTitle{
+            .SubTitle{
                 font-size: 20px;
                 line-height: 29px;
                 padding-bottom: 48px;

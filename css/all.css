@@ -12535,7 +12535,7 @@ header .btn {
   padding: 8px 32px;
 }
 
-main .areaTitle {
+main .MainTitle {
   font-size: 28px;
   line-height: 40px;
 }
@@ -12600,7 +12600,7 @@ main .roleList {
   background-repeat: no-repeat;
   padding-bottom: 60px;
 }
-main .roleList .areaSubTitle {
+main .roleList .SubTitle {
   font-size: 18px;
   line-height: 26px;
   padding: 16px 0px 32px;
@@ -13016,7 +13016,7 @@ footer .copyright {
   main .banner .banner_imgBox {
     background-image: none;
   }
-  main .areaTitle {
+  main .MainTitle {
     font-size: 32px;
     line-height: 46px;
   }
@@ -13033,7 +13033,7 @@ footer .copyright {
   main .platform p {
     font-size: 14px;
   }
-  main .roleList .areaSubTitle {
+  main .roleList .SubTitle {
     font-size: 20px;
     line-height: 29px;
     padding-bottom: 48px;
