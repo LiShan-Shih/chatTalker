@@ -37,21 +37,28 @@ header{
     .container{
         padding: 16px 20px;
     }
-    .logo{
-            height: 24px;
+    h1{
+        height: 24px;
+        .logo{
             width: auto;
+            height: 100%;
             img{
                 height: 100%;
                 vertical-align: top;
             }
         }
+    }
     .btn{
         padding: 8px 32px;
     }
 }
 
 main{
-    .area_intro{
+    .areaTitle{
+        font-size: 28px;
+        line-height: 40px;
+    }
+    .banner{
         padding-top: 32px;
         padding-bottom: 90px;
         img{
@@ -59,25 +66,21 @@ main{
             width: 100%;
             height: auto;
         }
-        .area_intro_textBox{
-            h1{
+        .banner_textBox{
+            h3{
                 color: $primary;
-                font-size: 18px;
-                line-height: 26px;
+                font-size: 16px;
+                line-height: 24px;
                 margin-bottom: 8px;
             }
             h2{
-                font-size: 48px;
-                line-height: 70px;
+                font-size: 32px;
+                line-height: 46px;
                 margin-bottom: 16px;
             }
-            h5{
-                font-size: 20px;
-                line-height: 29px; 
-            }
         }
-        .area_intro_imgBox{
-            background-image: url(../images/path157.svg);
+        .banner_imgBox{
+            background-image: url(../images/bg_yellow_sm.svg);
             background-position: center 80px;
             background-size: 95%;
             background-repeat: no-repeat;
@@ -86,8 +89,8 @@ main{
             }
         }
     }
-    .area_platform{
-        background-image: url(../images/Ellipse3.svg);
+    .platform{
+        background-image: url(../images/Ball01.svg);
         background-position: -85px 15px;
         background-size: 126px;
         background-repeat: no-repeat;
@@ -103,32 +106,23 @@ main{
             margin-bottom: 16px;
         }
         h3{
-            text-align: center;
-            font-size: 32px;
-            line-height: 46px;
-        }
-        h4{
-            font-size: 24px;
-            line-height: 35px;
+            font-size: 18px;
+            line-height: 26px;
+            margin-bottom: 16px;
         }
         p{
             color: #747474;
         }
     }
-    .area_role{
-        background-image: url(../images/Ellipse18.svg);
+    .roleList{
+        background-image: url(../images/Ball02.svg);
         background-position: right 1660px;
         background-size: 135px;
         background-repeat: no-repeat;
         padding-bottom: 60px;
-        .areaTitle{
-            font-size: 32px;
-            line-height: 46px;
-            text-align: center;
-        }
         .areaSubTitle{
-            font-size: 20px;
-            line-height: 29px;
+            font-size: 18px;
+            line-height: 26px;
             padding: 16px 0px 32px;
             text-align: center;
         }
@@ -157,7 +151,7 @@ main{
         .roleInfo{
             text-align: center;
             padding: 16px 16px 24px;
-            .fw-bold{
+            h3{
                 color: $primary;
                 font-size: 16px;
                 line-height: 24px;
@@ -168,9 +162,9 @@ main{
             }
         }
     }
-    .area_advantage{
+    .advantage{
         padding-bottom: 60px;
-        .area_advantageInner{
+        .advantageInner{
             > .row{
                 -ms-flex-direction: column-reverse;
                 -moz-flex-direction: column-reverse;
@@ -178,14 +172,14 @@ main{
                 flex-direction: column-reverse;
             }
         }
-        .serviceBox{
+        .advantageBox{
             li{
                 &:not(:last-of-type){
                     margin-bottom: 24px;
                 }
             }
         }
-        .serviceItem{
+        .advantageItem{
             max-width: 230px;
             margin-left: auto;
             margin-right: auto;
@@ -196,7 +190,7 @@ main{
             -webkit-border-radius: 12px;
             border-radius: 12px;
             padding: 32px 24px 48px;
-            .service_icon{
+            .advantage_icon{
                 margin-bottom: 24px;
                 box-shadow: 0px 2px 10px #00000014;
                 width: 86px;
@@ -211,11 +205,11 @@ main{
                 margin-bottom: 0;
             }
         }
-        .area_advantage_textBoxInner{
+        .advantage_textBoxInner{
             text-align: center;
             padding-bottom: 32px;
         }
-        .area_advantage_textBox{
+        .advantage_textBox{
             h2{
                 font-size: 28px;
                 line-height: 40px;
@@ -228,9 +222,9 @@ main{
             }
         }
     }
-    .area_review{
+    .feedback{
         padding-bottom: 60px;
-        background-image: url(../images/Ellipse19.svg);
+        background-image: url(../images/Ball03.svg);
         background-position: -20px 50px;
         background-size: 153px;
         background-repeat: no-repeat;
@@ -442,10 +436,10 @@ main{
             padding: 8px 20px 16px;
         }
     }
-    .reviewItem{
+    .feedbackItem{
         max-width: 352px;
         margin: 0 auto;
-        .reviewPerson{
+        .feedbackPerson{
             position: absolute;
             top: -65px;
             left: 0;
@@ -455,7 +449,7 @@ main{
                 height: auto;
             }
         }
-        .reviewInfo{
+        .feedbackInfo{
             margin: 53px 0 0;
             padding: 48px 28px 24px;
             box-shadow: 0px 2px 10px #00000014;
@@ -474,7 +468,7 @@ main{
                 margin-bottom: 8px;
             }
             ul{
-                .reviewStar{
+                .feedbackStar{
                     i:before{
                         color: #F5CA52;
                     }
@@ -569,7 +563,7 @@ footer{
 @media screen and (min-width: 768px) {
     // &#index{
     //     .pageContent{
-    //         background-image: url(../images/Ellipse3.svg), url(../images/Ellipse18.svg), url(../images/Ellipse19.svg);
+    //         background-image: url(../images/Ball01.svg), url(../images/Ball02.svg), url(../images/Ball03.svg);
     //         background-position: -180px 589px, 110% 1694px, 70px 2610px;
     //         background-size: 360px, 310px, 150px;
     //     }
@@ -587,7 +581,7 @@ footer{
         }
     }
     main{
-        .area_intro{
+        .banner{
             background-image: url(../images/bg_yellow.svg);
             background-position: right top;
             background-size: 850px;
@@ -597,7 +591,7 @@ footer{
             padding-top: 118px;
             padding-bottom: 110px;
             text-align: center;
-            .area_intro_textBox{
+            .banner_textBox{
                 h3{
                     font-size: 18px;
                     line-height: 26px;
@@ -612,7 +606,7 @@ footer{
                     line-height: 29px;
                 }
             }
-            .area_intro_imgBox{
+            .banner_imgBox{
                 background-image: none;
             }
         }
@@ -620,8 +614,8 @@ footer{
             font-size: 32px;
             line-height: 46px;
         }
-        .area_platform{
-            background-image: url(../images/Ellipse3.svg);
+        .platform{
+            background-image: url(../images/Ball01.svg);
             background-position: -180px 0;
             background-size: 360px;
             padding-top: 95px;
@@ -635,7 +629,7 @@ footer{
                 font-size: 14px;
             }
         }
-        .area_role{
+        .roleList{
             .areaSubTitle{
                 font-size: 20px;
                 line-height: 29px;
@@ -683,7 +677,7 @@ footer{
 }
 @media screen and (min-width: 992px) {
     main{
-        .area_platform{
+        .platform{
             ul{
                 padding-top: 48px;
             }
@@ -739,10 +733,10 @@ footer{
 }
 @media screen and (min-width: 1200px) {
     main{
-        .area_intro{
+        .banner{
             text-align: left;
         }
-        .area_role{
+        .roleList{
             background-position: 1350px 315px;
             background-size: 310px;
             padding-bottom: 100px;
@@ -756,9 +750,9 @@ footer{
             }
             
         }
-        .area_advantage{
+        .advantage{
             padding-bottom: 100px;
-            .area_advantageInner{
+            .advantageInner{
                 > .row{
                     -ms-flex-direction: row;
                     -moz-flex-direction: row;
@@ -766,26 +760,26 @@ footer{
                     flex-direction: row;
                 }
             }
-            .area_advantage_textBoxInner{
+            .advantage_textBoxInner{
                 text-align: left;
             }
-            .serviceBox{
+            .advantageBox{
                 li:nth-child(3){
                     margin-bottom: 0;
                 }
             }
-            .serviceItem{
+            .advantageItem{
                 margin-left: 0;
                 margin-right: 0;
             }
         }
-        .area_review{
+        .feedback{
             .owl-carousel{
                 padding-top: 48px;
             }
         }
-        .reviewItem{
-            .reviewInfo{    
+        .feedbackItem{
+            .feedbackInfo{    
                 p{
                     margin-bottom: 24px;
                     padding-bottom: 24px;
